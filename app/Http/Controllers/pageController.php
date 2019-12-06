@@ -11,7 +11,14 @@ class pageController extends Controller
     }
 
     public function contact(){
-        return view('pages.contact');
+        $cont = ['whatsapp' ,'insta', 'fb'];
+        $tit ='contact us on';
+        $langs =[
+            'frontEnd' => ['HTML', 'CSS' , 'Bootstrap' , 'js'],
+            'backend' => ['php' , 'mysql' , 'laravel']
+        ];
+       
+        return view('pages.contact')->with($langs);
     }
 
     public function login(){

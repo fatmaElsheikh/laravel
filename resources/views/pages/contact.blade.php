@@ -1,12 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{env('APP_NAME' , 'Laravel')}}</title>
-</head>
-<body>
-    <h1 class="text-center"> contact Us </h1>
-</body>
-</html>
+@extends('layouts.master')
+@section('title')
+    Contact
+    
+@endsection
+<ul>
+    
+    @foreach ($frontEnd as $front )
+   <li> {{$front}} </li>
+    @endforeach
+</ul>
+<ul>
+    @foreach ($backend as $back )
+   <li> {{$back}} </li>
+    @endforeach
+</ul>   
+    
